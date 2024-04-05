@@ -1,0 +1,49 @@
+.intro_content{
+    width: 80%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.quick_fact{
+    padding-left: 50px;
+    flex: 1;
+    text-align: left;
+}
+.generality{
+    flex: 2;
+}
+.quick_fact_content{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display:flex;
+}
+.winner_prize{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .all_winner_prize{
+    width: 50%;
+    padding: 20px;
+    display: flex;
+  }
+  .prize_name{
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .title_prize{
+    color: skyblue;
+    margin-bottom: 10px;
+  }
+  .prize_detail{
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  .winner_prize_img{
+    padding-right: 15px;
+  }
+  .prize_detail{
+    margin-top: 25px;
+   }

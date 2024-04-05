@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <head>
+        <div class="banner">
+            <img src="" alt="">
+        </div>
+        <!--Đổ data từ database-->
+        <hr>
+        <div class="navbar">
+        <div class="menu">
+            <li><a href="">Nobel Prizes & Laureates</a>
+             <ul class="sub-menu">
+                <li><a href="">All Nobel Prizes</a></li>
+                <li><a href="">Physics Prize</a></li>
+                <li><a href="">Chemistry Prize</a> </li>
+                <li><a href="">...</a> </li>
+             </ul>
+            </li>
+            <li><a href="">Nomination</a>
+                <ul class="sub-menu">
+                    <li><a href="">All Prizes</a></li>
+                    <li><a href="">Physics Prize</a></li>
+                    <li><a href="">Chemistry Prize</a> </li>
+                    <li><a href="">...</a> </li>
+                 </ul>
+            </li>
+            <li><a href="">Alfred Nobel</a></li>
+            <li><a href="">News & insights</a></li>
+           
+        </div>
+        <div class="show_search">
+            <li><i id="searchIcon" style="color: burlywood;" class="fas fa-search"></i></li>
+        </div>
+    </div>
+        <hr>
+        <div class="search" style="display: none;">
+            <input type="text" placeholder="Enter your search here?" style="font-size: 18px;">
+            <div class="icon_header">
+            <i style="color: burlywood; margin-top: 20px; font-size:20px " class="fas fa-search"></i>
+            <i id="hinde_search" style="font-size:25px ; margin-left: 12px;" class="fas fa-caret-up"></i>
+            </div>
+        </div>
+        
+    </head>
+     <!-- Slider -->
+     <section id="slider">
+        <!-- <div class="logo">
+            <img src="./img/z5259488677843_7b5373257d2f223bf2ad0a815de13a78.jpg" alt="">
+        </div> -->
+        <div class="aspect-ratio-169">
+            <img src="./img/nobel.jpg" alt="">
+            <img src="./img/10_Oct_2022_104614_GMTMarie_Curie_b1.jpg" alt="">
+            <img src="./img/76d6110311t2901l0.jpg" alt="">
+            <img src="./img/phyics.jpeg" alt="">
+        </div>
+        <div class="dot-container">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+</section>
+<!-- content - đổ từ database -->
+<div style="margin-top: 20px;" class="name-content">
+    <p  style="font-size: 40px; margin-left: 200px;">Nobel Prize awarded discoveries</p>
+</div>
+<div class="content">
+<div class="main-content">
+    <div class="name-topic">
+        <p style="color: darkkhaki;">Nobel Prize in Physics 1936</p>
+    </div>
+    <div class="name-prize">
+        <p style="font-size: 60px;">Discovery of the positron</p>
+    </div>
+    <br>
+    <div class="detail-content">
+        <p>By studying the tracks of cosmic ray particles in a cloud chamber, Carl D. Anderson discovered a positively-charged particle with a mass seemingly equal to an electron’s. In 1932, Anderson’s particle was the first antiparticle proven by experiment and was named a “positron”. Watch Anderson explaining what a positron is.</p>
+    </div>
+</div>
+<div class="img">
+    <img style="width: 550px; height: 350px; margin-left: 20px;" src="./img/z5259455912651_b1060d80a3209d3db4cb5da3952615c1.jpg" alt="">
+</div>
+</div>
+<!--  -->
+
+</body>
+<!-- show search -->
+<script>
+    document.getElementById("searchIcon").onclick = function() {
+        document.querySelector(".search").style.display = "";
+    };
+    document.getElementById("hinde_search").onclick = function() {
+        document.querySelector(".search").style.display = "none";
+    };
+</script>
+<script src="JS/controler_home.js"></script>
+</html>

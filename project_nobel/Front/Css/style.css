@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 50px;
+    height: 70px;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1;
+    background: rgba(255,255, 255, 0.3);
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+}
+.show_search{
+    margin-top: 22px;
+    margin-left: 12px;
+}
+/*--- animation hearder*/
+header:hover{
+    background: rgba(255,255, 255,1);
+}
+header.sticky{
+    background: rgba(255,255, 255,1);
+}
+/* -------------------- */
+.menu{
+    padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.menu>li{
+   padding: 0 12px;
+   position: relative;
+}
+.menu > li:hover .sub-menu{
+    visibility: visible;
+    top: 45px
+}
+.sub-menu{
+    position: absolute;
+    width: 250px;
+    border: 1px solid #ccc;
+    padding: 10px 0 10px 20px;
+    visibility: hidden;
+    top :60px;
+    transition: 0.2s;
+    z-index:1 ;
+    background: #fff;
+}
+.sub-menu li ul a{
+    font-weight: normal !important;
+    font-size: 12px !important;
+}
+.menu li a{
+   font-size: 17px; 
+   font-weight: bold !important;
+   display: block;
+   line-height: 20px;
+   
+}
+
+.search input{
+    border: none;
+    width: 60%;
+    margin-right: 20px ;
+}
+.search{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 1px black ;
+}
+/*--------------------------Slider--------------------*/
+#slider{
+    width: 100%;
+    height: 730px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid#000;
+    overflow: hidden;
+}
+.aspect-ratio-169 {
+    display: block;
+    position: relative;
+    padding-top: 56.25%;
+    transition: 0.3s;
+  }
+  
+  .aspect-ratio-169 img {
+    display: block;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 10%;
+    width: 80%;
+    height: 70%;
+    top: 0;
+    left: 0;
+  }
+  .dot-container{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+  }
+
+  .dot{
+    height: 16px;
+    width: 16px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 18px;
+    cursor: pointer;
+    
+  }
+  .dot.active{
+    background-color: #000;
+  }
+  /* content */
+  .content{
+    padding: 10px 200px 10px 200px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  /* nobel will */
+  .title_main{
+    font-size: 30px;
+    margin: 25px 0 15px 0 ;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 1px solid silver;
+  }
+  .content_nobel_will{
+    width: 50%;
+    margin: 0 auto;
+  }
+  .first_content{
+    border-bottom: 1px solid silver;
+  }
+  .first_content p{
+    font-size: 20px;
+    padding: 20px 20px 25px 20px ;
+  }
+  .title_content{
+    font-size: 20px;
+    padding: 20px 0 25px 0;
+    margin-left: 10px;
+  }
+  .img_des img{
+    width: 55%;
+    height: 150px;
+  }
+  .content_nobel_life{
+    width: 50%;
+    margin: 0 auto;
+  }
+  .img_alfred{
+    margin: 10px;
+  }
+  #more{
+    color: red;
+    text-align: right;
+    margin: 5px 0 5px 0;
+    
+  }
+  #more:hover{
+    cursor: pointer;
+  }
+  #less{
+    color: red;
+    text-align: right;
+    margin: 5px 0 5px 0;
+  }
+  #less:hover{
+    cursor: pointer;
+  }
+
+.nomin{
+  font-size: 25px;
+ 
+}
+.li-style{
+list-style-type: style;
+}
+.first_content ol li{
+  font-size: 20px;
+  padding: 10px 10px 15px 10px ;
+}
+.img_nomination img{
+   margin-top: 20px;
+    width: 100%;
+    height: 450px;
+}

@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 50px;
+    height: 70px;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1;
+    background: rgba(255,255, 255, 0.3);
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+}
+.show_search{
+    margin-top: 22px;
+    margin-left: 12px;
+}
+/*--- animation hearder*/
+header:hover{
+    background: rgba(255,255, 255,1);
+}
+header.sticky{
+    background: rgba(255,255, 255,1);
+}
+/* -------------------- */
+.menu{
+    padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.menu>li{
+   padding: 0 12px;
+   position: relative;
+}
+.menu > li:hover .sub-menu{
+    visibility: visible;
+    top: 45px
+}
+.sub-menu{
+    position: absolute;
+    width: 150px;
+    border: 1px solid #ccc;
+    padding: 10px 0 10px 20px;
+    visibility: hidden;
+    top :60px;
+    transition: 0.2s;
+    z-index:1 ;
+    background: #fff;
+}
+.sub-menu li ul a{
+    font-weight: normal !important;
+    font-size: 12px !important;
+}
+.menu li a{
+   font-size: 17px; 
+   font-weight: bold !important;
+   display: block;
+   line-height: 20px;
+}
+
+.search input{
+    border: none;
+    width: 60%;
+    margin-right: 20px ;
+}
+.search{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 1px black ;
+}
+/*--------------------------Slider--------------------*/
+#slider{
+    width: 100%;
+    height: 730px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid#000;
+    overflow: hidden;
+}
+.aspect-ratio-169 {
+    display: block;
+    position: relative;
+    padding-top: 56.25%;
+    transition: 0.3s;
+  }
+  
+  .aspect-ratio-169 img {
+    display: block;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 10%;
+    width: 80%;
+    height: 70%;
+    top: 0;
+    left: 0;
+  }
+  .dot-container{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top:130%;
+  }
+
+  .dot{
+    height: 16px;
+    width: 16px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 18px;
+    cursor: pointer;
+  }
+  .dot.active{
+    background-color: #000;
+  }
+  /* content */
+  .content{
+    padding: 10px 200px 10px 200px;
+    display: flex;
+    justify-content: space-evenly;
+  }
